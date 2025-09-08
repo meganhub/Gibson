@@ -83,7 +83,7 @@ table.normal {
 
 table.normal td {
     padding: 5px;
-    padding-left: 25px; /* only this table has extra left padding */
+    padding-left: 35px; /* only this table has extra left padding */
     border: 0px solid #ddd;
     text-align: left;
 }

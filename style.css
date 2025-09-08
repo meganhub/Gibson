@@ -67,24 +67,85 @@ h1, h2 {
     background-color: #0056b3;
 }
 
-table {
+/* -------------------------------
+   Tables
+--------------------------------*/
+
+/* Normal table (with left padding 25px) */
+table.normal {
     width: 90%; 
     margin-left: auto;
     margin-right: auto;
     border-collapse: collapse;
     border-spacing: 0;
-    table-layout: fixed; /* This makes all columns have the same width */
+    table-layout: fixed;
 }
 
-td {
+table.normal td {
     padding: 5px;
-    padding-left: 25px;
+    padding-left: 25px; /* only this table has extra left padding */
     border: 0px solid #ddd;
-    text-align: left; /* This left-aligns the text within each cell */
+    text-align: left;
 }
 
-tr:nth-child(even) {
+table.normal tr:nth-child(even) {
     background-color: #f2f2f2;
+}
+
+/* Small and large tables (no extra left padding) */
+.table-small,
+.table-large {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+.table-small { width: 60%; }
+.table-large { width: 90%; }
+
+.table-small td,
+.table-large td {
+    padding: 5px; /* even padding */
+    border: 0px solid #ddd;
+    text-align: left;
+}
+
+.table-small tr:nth-child(even),
+.table-large tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Scroll container */
+.table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-scroll table {
+    min-width: 640px; /* adjust if more columns */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .table-small,
+    .table-large,
+    table.normal {
+        width: 100%;
+        table-layout: auto;
+    }
+
+    .table-small td,
+    .table-large td,
+    table.normal td {
+        padding: 8px;
+        padding-left: unset; /* only the "normal" one keeps its padding-left */
+    }
+
+    table.normal td {
+        padding-left: 25px; /* keep this on mobile */
+    }
 }
 
 footer {

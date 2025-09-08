@@ -78,7 +78,7 @@ table {
 
 td {
     padding: 5px;
-    leftpadding: 25px;
+    padding-left: 25px;
     border: 0px solid #ddd;
     text-align: left; /* This left-aligns the text within each cell */
 }

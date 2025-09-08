@@ -67,21 +67,22 @@ h1, h2 {
 }
 
 table {
-    width: 80%; /* Adjusts the width of the table, creating the indent */
-    margin-left: auto; /* Centers the table by setting the left margin automatically */
-    margin-right: auto; /* Centers the table by setting the right margin automatically */
-    border-collapse: collapse; /* Removes the space between the table cells */
+    width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
     border-spacing: 0;
+    table-layout: fixed; /* This makes all columns have the same width */
 }
 
 td {
-    padding: 10px; /* Adds space inside each cell */
-    border: 1px solid #ddd; /* Creates a light border around each cell */
-    text-align: center; /* Centers the text inside each cell */
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left; /* This left-aligns the text within each cell */
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2; /* Creates a subtle alternating row color for better readability */
+    background-color: #f2f2f2;
 }
 
 footer {

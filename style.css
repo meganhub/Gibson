@@ -66,6 +66,24 @@ h1, h2 {
     background-color: #0056b3;
 }
 
+table {
+    width: 80%; /* Adjusts the width of the table, creating the indent */
+    margin-left: auto; /* Centers the table by setting the left margin automatically */
+    margin-right: auto; /* Centers the table by setting the right margin automatically */
+    border-collapse: collapse; /* Removes the space between the table cells */
+    border-spacing: 0;
+}
+
+td {
+    padding: 10px; /* Adds space inside each cell */
+    border: 1px solid #ddd; /* Creates a light border around each cell */
+    text-align: center; /* Centers the text inside each cell */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Creates a subtle alternating row color for better readability */
+}
+
 footer {
     text-align: center;
     padding: 20px;

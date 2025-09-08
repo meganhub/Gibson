@@ -21,6 +21,12 @@ header img {
     margin-top: 20px;
 }
 
+.location {
+    font-size: 0.8em; /* Makes the font size smaller */
+    color: #000;      /* Sets the text color to black */
+    margin-top: -15px; /* Pulls the text up closer to the paragraph above */
+}
+
 main {
     max-width: 80%;
     margin: 20px auto;
